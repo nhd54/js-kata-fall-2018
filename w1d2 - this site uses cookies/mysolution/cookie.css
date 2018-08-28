@@ -20,7 +20,13 @@ section {
   display: grid;
   grid-template-columns: 80% 20%;
   padding: 10px;
+  animation: cookieslider 1s 1;
 }
+
+.clicked {
+  animation: cookieslider 1s 1 reverse;
+}
+
 .cookie > button {
   grid-column: 2/2;
   width: 100%;
@@ -35,4 +41,13 @@ section {
   grid-column: 1/2;
   width: 100%;
   align-self: center;
+}
+
+@keyframes cookieslider {
+  from {
+    top: 105%;
+  }
+  to {
+    top: 65%;
+  }
 }
