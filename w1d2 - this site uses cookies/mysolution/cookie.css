@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow: hidden;
+}
 
 section {
   width: 100vw;
@@ -20,11 +23,15 @@ section {
   display: grid;
   grid-template-columns: 80% 20%;
   padding: 10px;
-  animation: cookieslider 1s 1;
+  animation: cookieslider linear 1s 1;
 }
 
 .clicked {
-  animation: cookieslider 1s 1 reverse;
+  animation-name: cookieslider-back;
+  animation-duration: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .cookie > button {
@@ -49,5 +56,14 @@ section {
   }
   to {
     top: 65%;
+  }
+}
+
+@keyframes cookieslider-back {
+  from {
+    top: 65%;
+  }
+  to {
+    top: 105%;
   }
 }
