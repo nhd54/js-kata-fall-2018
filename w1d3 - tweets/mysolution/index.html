@@ -12,11 +12,10 @@
 <body>
     <section>
 
-
         <template>
             <div>
                 <h1></h1>
-                <p></p>
+                <p class=text></p>
                 <small></small>
             </div>
         </template>
@@ -24,5 +23,34 @@
 </body>
 
 <script src="script.js"></script>
+<script>
+    let jsonurl = "https://kea-alt-del.dk/twitter/api/?count=50";
+    let tweets = [];
+    let display = document.querySelector("section");
+    let template = document.querySelector("template");
+    document.addEventListener("DOMContentLoaded", getTweet);
+
+    async function getTweet() {
+        let datajson = await fetch(jsonurl);
+        tweets = await datajson.json();
+        // console.log(tweets);
+
+
+        forEach.call(tweets, function (el) {
+            console.log(el);
+        });
+
+
+
+
+
+
+
+    }
+
+
+
+
+</script>
 
 </html>

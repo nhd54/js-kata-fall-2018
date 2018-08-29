@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 3%;
+}
+
+div {
+  border: 1px solid black;
+  height: 400px;
+}
