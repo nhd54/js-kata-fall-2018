@@ -22,7 +22,15 @@ body {
 }
 
 #modal_window {
-  max-width: 80vw;
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+  opacity: 0.9;
+  height: 100vh;
+}
+
+#closebutton {
+  cursor: pointer;
 }
 
 .hidden {
