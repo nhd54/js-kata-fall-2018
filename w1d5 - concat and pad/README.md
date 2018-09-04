@@ -34,7 +34,7 @@ Test the function directly in the console, call it with various patterns and num
 Use some or more of these String-methods:
 
 - `.indexOf`
-- `.substr`
+- `.substring`
 - `.replace`
 - `.padStart`
 - `.padEnd`
