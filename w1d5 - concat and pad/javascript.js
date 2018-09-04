@@ -7,7 +7,7 @@ function replaceName(name, res) {
   replace = res;
 }
 
-replaceName("myfile_backup.#", "8");
+replaceName("mit_navn_#", "10");
 
 console.log(imageName.replace("#", replace));
 
